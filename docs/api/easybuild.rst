@@ -13,14 +13,9 @@ Subpackages
 Submodules
 ----------
 
-easybuild.main module
----------------------
+.. toctree::
 
-.. automodule:: easybuild.main
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
+   easybuild.main
 
 Module contents
 ---------------

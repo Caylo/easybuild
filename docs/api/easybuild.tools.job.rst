@@ -4,30 +4,11 @@ easybuild.tools.job package
 Submodules
 ----------
 
-easybuild.tools.job.backend module
-----------------------------------
+.. toctree::
 
-.. automodule:: easybuild.tools.job.backend
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-easybuild.tools.job.gc3pie module
----------------------------------
-
-.. automodule:: easybuild.tools.job.gc3pie
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-easybuild.tools.job.pbs_python module
--------------------------------------
-
-.. automodule:: easybuild.tools.job.pbs_python
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
+   easybuild.tools.job.backend
+   easybuild.tools.job.gc3pie
+   easybuild.tools.job.pbs_python
 
 Module contents
 ---------------

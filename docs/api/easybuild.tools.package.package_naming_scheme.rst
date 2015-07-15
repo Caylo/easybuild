@@ -4,22 +4,10 @@ easybuild.tools.package.package_naming_scheme package
 Submodules
 ----------
 
-easybuild.tools.package.package_naming_scheme.easybuild_pns module
-------------------------------------------------------------------
+.. toctree::
 
-.. automodule:: easybuild.tools.package.package_naming_scheme.easybuild_pns
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-easybuild.tools.package.package_naming_scheme.pns module
---------------------------------------------------------
-
-.. automodule:: easybuild.tools.package.package_naming_scheme.pns
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
+   easybuild.tools.package.package_naming_scheme.easybuild_pns
+   easybuild.tools.package.package_naming_scheme.pns
 
 Module contents
 ---------------

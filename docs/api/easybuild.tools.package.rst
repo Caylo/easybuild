@@ -11,14 +11,9 @@ Subpackages
 Submodules
 ----------
 
-easybuild.tools.package.utilities module
-----------------------------------------
+.. toctree::
 
-.. automodule:: easybuild.tools.package.utilities
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
+   easybuild.tools.package.utilities
 
 Module contents
 ---------------

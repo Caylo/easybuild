@@ -4,86 +4,18 @@ easybuild.tools.toolchain package
 Submodules
 ----------
 
-easybuild.tools.toolchain.compiler module
------------------------------------------
+.. toctree::
 
-.. automodule:: easybuild.tools.toolchain.compiler
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-easybuild.tools.toolchain.constants module
-------------------------------------------
-
-.. automodule:: easybuild.tools.toolchain.constants
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-easybuild.tools.toolchain.fft module
-------------------------------------
-
-.. automodule:: easybuild.tools.toolchain.fft
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-easybuild.tools.toolchain.linalg module
----------------------------------------
-
-.. automodule:: easybuild.tools.toolchain.linalg
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-easybuild.tools.toolchain.mpi module
-------------------------------------
-
-.. automodule:: easybuild.tools.toolchain.mpi
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-easybuild.tools.toolchain.options module
-----------------------------------------
-
-.. automodule:: easybuild.tools.toolchain.options
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-easybuild.tools.toolchain.toolchain module
-------------------------------------------
-
-.. automodule:: easybuild.tools.toolchain.toolchain
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-easybuild.tools.toolchain.toolchainvariables module
----------------------------------------------------
-
-.. automodule:: easybuild.tools.toolchain.toolchainvariables
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-easybuild.tools.toolchain.utilities module
-------------------------------------------
-
-.. automodule:: easybuild.tools.toolchain.utilities
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-easybuild.tools.toolchain.variables module
-------------------------------------------
-
-.. automodule:: easybuild.tools.toolchain.variables
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
+   easybuild.tools.toolchain.compiler
+   easybuild.tools.toolchain.constants
+   easybuild.tools.toolchain.fft
+   easybuild.tools.toolchain.linalg
+   easybuild.tools.toolchain.mpi
+   easybuild.tools.toolchain.options
+   easybuild.tools.toolchain.toolchain
+   easybuild.tools.toolchain.toolchainvariables
+   easybuild.tools.toolchain.utilities
+   easybuild.tools.toolchain.variables
 
 Module contents
 ---------------

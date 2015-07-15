@@ -11,30 +11,11 @@ Subpackages
 Submodules
 ----------
 
-easybuild.framework.easyblock module
-------------------------------------
+.. toctree::
 
-.. automodule:: easybuild.framework.easyblock
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-easybuild.framework.extension module
-------------------------------------
-
-.. automodule:: easybuild.framework.extension
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-easybuild.framework.extensioneasyblock module
----------------------------------------------
-
-.. automodule:: easybuild.framework.extensioneasyblock
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
+   easybuild.framework.easyblock
+   easybuild.framework.extension
+   easybuild.framework.extensioneasyblock
 
 Module contents
 ---------------
