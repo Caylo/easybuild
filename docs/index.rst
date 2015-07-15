@@ -142,6 +142,4 @@ Contents:
 .. toctree::
    :maxdepth: 4
 
-   easybuild
-   setup
-   test
+    /api/*
