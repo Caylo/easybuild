@@ -2,8 +2,9 @@
 Overview of generic easyblocks
 ==============================
 
-.. contents::
-    :depth: 2
+*(this page was generated automatically using* ``easybuild.tools.docs.gen_easyblocks_overview_rst()`` *)*
+
+:ref:`BinariesTarball` - :ref:`Binary` - :ref:`Bundle` - :ref:`CMakeMake` - :ref:`CMakePythonPackage` - :ref:`CmdCp` - :ref:`ConfigureMake` - :ref:`ConfigureMakePythonPackage` - :ref:`FortranPythonPackage` - :ref:`IntelBase` - :ref:`JAR` - :ref:`MakeCp` - :ref:`PackedBinary` - :ref:`PerlModule` - :ref:`PythonPackage` - :ref:`RPackage` - :ref:`Rpm` - :ref:`RubyGem` - :ref:`Tarball` - :ref:`Toolchain` - :ref:`VSCPythonPackage` - :ref:`VersionIndependendPythonPackage` - :ref:`VersionIndependentPythonPackage`
 
 .. _BinariesTarball:
 
@@ -14,12 +15,9 @@ Overview of generic easyblocks
 
 Support for installing a tarball of binaries
 
-
 Customised steps in ``BinariesTarball`` easyblock
 -------------------------------------------------
-* ``build_step`` - Dummy build method: nothing to build (inherited)
-* ``configure_step`` - Dummy configure method (inherited)
-* ``install_step`` - Install by copying unzipped binaries to 'bin' subdir of installation dir, and fixing permissions. (inherited)
+* ``install_step`` - Install by copying unzipped binaries to 'bin' subdir of installation dir, and fixing permissions.
 
 .. _Binary:
 
@@ -40,7 +38,6 @@ easyconfig parameter   description                                              
 ``staged_install``     Perform staged installation via subdirectory of build directory   ``False``    
 ``install_cmd``        Install command to be used.                                       ``None``     
 ====================   ===============================================================   =============
-
 
 Customised steps in ``Binary`` easyblock
 ----------------------------------------
@@ -85,7 +82,6 @@ Example for ``Binary`` easyblock
 (derives from EasyBlock)
 
 Bundle of modules: only generate module files, nothing to build/install
-
 
 Customised steps in ``Bundle`` easyblock
 ----------------------------------------
@@ -140,14 +136,10 @@ easyconfig parameter       description                                          
 ``srcdir``                 Source directory location to provide to cmake command   ``None``       
 ========================   =====================================================   ===============
 
-
 Customised steps in ``CMakeMake`` easyblock
 -------------------------------------------
-* ``build_step`` - Start the actual build
-        - typical: make -j X (inherited)
-* ``configure_step`` - Configure build using cmake (inherited)
-* ``install_step`` - Create the installation in correct location
-        - typical: make install (inherited)
+* ``configure_step`` - Configure build using cmake
+* ``install_step`` - Configure build using cmake
 
 
 Example for ``CMakeMake`` easyblock
@@ -217,7 +209,6 @@ easyconfig parameter       description                                          
 ``srcdir``                 Source directory location to provide to cmake command   ``None``       
 ========================   =====================================================   ===============
 
-
 Customised steps in ``CMakePythonPackage`` easyblock
 ----------------------------------------------------
 * ``build_step`` - Build Python package with cmake
@@ -248,12 +239,11 @@ easyconfig parameter       description                                          
 ``prefix_opt``             Prefix command line option for configure script                         ``"--prefix="``                                     
 ========================   =====================================================================   ====================================================
 
-
 Customised steps in ``CmdCp`` easyblock
 ---------------------------------------
 * ``build_step`` - Build by running the command with the inputfiles
-* ``configure_step`` - Configure build if required (inherited)
-* ``install_step`` - Install by copying specified files and directories. (inherited)
+* ``configure_step`` - Build by running the command with the inputfiles
+* ``install_step`` - Build by running the command with the inputfiles
 
 .. _ConfigureMake:
 
@@ -277,9 +267,14 @@ easyconfig parameter       description                                         d
 
 Commonly used easyconfig parameters with ``ConfigureMake`` easyblock
 --------------------------------------------------------------------
-* ``configopts`` - Extra options passed to configure (default already has --prefix)
-* ``buildopts`` - Extra options passed to make step (default already has -j X)
-* ``installopts`` - Extra options for installation
+====================   ================================================================
+easyconfig parameter   description                                                     
+====================   ================================================================
+configopts             Extra options passed to configure (default already has --prefix)
+buildopts              Extra options passed to make step (default already has -j X)    
+installopts            Extra options for installation                                  
+====================   ================================================================
+
 
 Customised steps in ``ConfigureMake`` easyblock
 -----------------------------------------------
@@ -344,7 +339,6 @@ easyconfig parameter       description                                         d
 ``options``                Dictionary with extension options.                  ``{}``         
 ``tar_config_opts``        Override tar settings as determined by configure.   ``False``      
 ========================   =================================================   ===============
-
 
 Customised steps in ``ConfigureMakePythonPackage`` easyblock
 ------------------------------------------------------------
@@ -412,12 +406,11 @@ easyconfig parameter   description                          default value
 ``options``            Dictionary with extension options.   ``{}``       
 ====================   ==================================   =============
 
-
 Customised steps in ``FortranPythonPackage`` easyblock
 ------------------------------------------------------
 * ``build_step`` - Customize the build step by adding compiler-specific flags to the build command.
-* ``configure_step`` - Configure Python package build. (inherited)
-* ``install_step`` - Install Python package to a custom path using setup.py (inherited)
+* ``configure_step`` - Customize the build step by adding compiler-specific flags to the build command.
+* ``install_step`` - Customize the build step by adding compiler-specific flags to the build command.
 
 .. _IntelBase:
 
@@ -440,7 +433,6 @@ easyconfig parameter     description                           default value
 ``license_activation``   License activation type               ``"license_server"``
 ``usetmppath``           Use temporary path for installation   ``False``           
 ======================   ===================================   ====================
-
 
 Customised steps in ``IntelBase`` easyblock
 -------------------------------------------
@@ -471,13 +463,6 @@ easyconfig parameter   description                                              
 ``install_cmd``        Install command to be used.                                       ``None``     
 ====================   ===============================================================   =============
 
-
-Customised steps in ``JAR`` easyblock
--------------------------------------
-* ``build_step`` - No compilation, this is binary software (inherited)
-* ``configure_step`` - No configuration, this is binary software (inherited)
-* ``install_step`` - Copy all files in build directory to the install directory (inherited)
-
 .. _MakeCp:
 
 ``MakeCp``
@@ -500,13 +485,10 @@ easyconfig parameter       description                                         d
 ``with_configure``         Run configure script before building                ``False``      
 ========================   =================================================   ===============
 
-
 Customised steps in ``MakeCp`` easyblock
 ----------------------------------------
-* ``build_step`` - Start the actual build
-        - typical: make -j X (inherited)
-* ``configure_step`` - Configure build if required (inherited)
-* ``install_step`` - Install by copying specified files and directories. (inherited)
+* ``configure_step`` - Configure build if required
+* ``install_step`` - Install by copying specified files and directories.
 
 .. _PackedBinary:
 
@@ -528,12 +510,9 @@ easyconfig parameter   description                                              
 ``install_cmd``        Install command to be used.                                       ``None``     
 ====================   ===============================================================   =============
 
-
 Customised steps in ``PackedBinary`` easyblock
 ----------------------------------------------
-* ``build_step`` - No compilation, this is binary software (inherited)
-* ``configure_step`` - No configuration, this is binary software (inherited)
-* ``install_step`` - Copy all unpacked source directories to install directory, one-by-one. (inherited)
+* ``install_step`` - Copy all unpacked source directories to install directory, one-by-one.
 
 .. _PerlModule:
 
@@ -553,7 +532,6 @@ easyconfig parameter   description                          default value
 ``runtest``            Run unit tests.                      ``"test"``   
 ``options``            Dictionary with extension options.   ``{}``       
 ====================   ==================================   =============
-
 
 Customised steps in ``PerlModule`` easyblock
 --------------------------------------------
@@ -580,7 +558,6 @@ easyconfig parameter   description                          default value
 ``options``            Dictionary with extension options.   ``{}``       
 ====================   ==================================   =============
 
-
 Customised steps in ``PythonPackage`` easyblock
 -----------------------------------------------
 * ``build_step`` - Build Python package using setup.py
@@ -604,7 +581,6 @@ easyconfig parameter   description                          default value
 ====================   ==================================   =============
 ``options``            Dictionary with extension options.   ``{}``       
 ====================   ==================================   =============
-
 
 Customised steps in ``RPackage`` easyblock
 ------------------------------------------
@@ -637,12 +613,10 @@ easyconfig parameter   description                                              
 ``preinstall``         Enable pre install                                                ``False``    
 ====================   ===============================================================   =============
 
-
 Customised steps in ``Rpm`` easyblock
 -------------------------------------
-* ``build_step`` - No compilation, this is binary software (inherited)
-* ``configure_step`` - Custom configuration procedure for RPMs: rebuild RPMs for relocation if required. (inherited)
-* ``install_step`` - Custom installation procedure for RPMs into a custom prefix. (inherited)
+* ``configure_step`` - Custom configuration procedure for RPMs: rebuild RPMs for relocation if required.
+* ``install_step`` - Custom installation procedure for RPMs into a custom prefix.
 
 .. _RubyGem:
 
@@ -662,7 +636,6 @@ easyconfig parameter   description                          default value
 ``options``            Dictionary with extension options.   ``{}``       
 ====================   ==================================   =============
 
-
 Customised steps in ``RubyGem`` easyblock
 -----------------------------------------
 * ``build_step`` - No separate build procedure for Ruby Gems.
@@ -679,7 +652,6 @@ Customised steps in ``RubyGem`` easyblock
 Precompiled software supplied as a tarball:
     - will unpack binary and copy it to the install dir
 
-
 Customised steps in ``Tarball`` easyblock
 -----------------------------------------
 * ``build_step`` - Dummy build method: nothing to build
@@ -694,13 +666,6 @@ Customised steps in ``Tarball`` easyblock
 (derives from :ref:`Bundle`)
 
 Compiler toolchain: generate module file only, nothing to build/install
-
-
-Customised steps in ``Toolchain`` easyblock
--------------------------------------------
-* ``build_step`` - Do nothing. (inherited)
-* ``configure_step`` - Do nothing. (inherited)
-* ``install_step`` - Do nothing. (inherited)
 
 .. _VSCPythonPackage:
 
@@ -721,13 +686,6 @@ easyconfig parameter   description                          default value
 ``options``            Dictionary with extension options.   ``{}``       
 ====================   ==================================   =============
 
-
-Customised steps in ``VSCPythonPackage`` easyblock
---------------------------------------------------
-* ``build_step`` - No build procedure. (inherited)
-* ``configure_step`` - No build procedure. (inherited)
-* ``install_step`` - Custom install procedure to skip selection of python package versions. (inherited)
-
 .. _VersionIndependendPythonPackage:
 
 ``VersionIndependendPythonPackage``
@@ -746,13 +704,6 @@ easyconfig parameter   description                          default value
 ``runtest``            Run unit tests.                      ``True``     
 ``options``            Dictionary with extension options.   ``{}``       
 ====================   ==================================   =============
-
-
-Customised steps in ``VersionIndependendPythonPackage`` easyblock
------------------------------------------------------------------
-* ``build_step`` - No build procedure. (inherited)
-* ``configure_step`` - No build procedure. (inherited)
-* ``install_step`` - Custom install procedure to skip selection of python package versions. (inherited)
 
 .. _VersionIndependentPythonPackage:
 
@@ -773,9 +724,8 @@ easyconfig parameter   description                          default value
 ``options``            Dictionary with extension options.   ``{}``       
 ====================   ==================================   =============
 
-
 Customised steps in ``VersionIndependentPythonPackage`` easyblock
 -----------------------------------------------------------------
 * ``build_step`` - No build procedure.
-* ``configure_step`` - Configure Python package build. (inherited)
-* ``install_step`` - Custom install procedure to skip selection of python package versions. (inherited)
+* ``configure_step`` - No build procedure.
+* ``install_step`` - Custom install procedure to skip selection of python package versions.
