@@ -133,3 +133,15 @@ Appendices
     Installing-Lmod-without-root-permissions
     Useful_links
     Release_notes
+
+
+API docs
+========
+Contents:
+
+.. toctree::
+   :maxdepth: 4
+
+   easybuild
+   setup
+   test
