@@ -1,8 +1,8 @@
+*(this page was generated automatically using* ``easybuild.tools.docs.gen_easyblocks_overview_rst()`` *)*
+
 ==============================
 Overview of generic easyblocks
 ==============================
-
-*(this page was generated automatically using* ``easybuild.tools.docs.gen_easyblocks_overview_rst()`` *)*
 
 :ref:`BinariesTarball` - :ref:`Binary` - :ref:`Bundle` - :ref:`CMakeMake` - :ref:`CMakePythonPackage` - :ref:`CmdCp` - :ref:`ConfigureMake` - :ref:`ConfigureMakePythonPackage` - :ref:`FortranPythonPackage` - :ref:`IntelBase` - :ref:`JAR` - :ref:`MakeCp` - :ref:`PackedBinary` - :ref:`PerlModule` - :ref:`PythonPackage` - :ref:`RPackage` - :ref:`Rpm` - :ref:`RubyGem` - :ref:`Tarball` - :ref:`Toolchain` - :ref:`VSCPythonPackage` - :ref:`VersionIndependendPythonPackage` - :ref:`VersionIndependentPythonPackage`
 
