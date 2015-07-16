@@ -73,7 +73,7 @@ Other topics
     Useful-scripts
     Deprecated-functionality
     Removed-functionality
-    api/*
+    api/easybuild
 
 Getting help
 ============
