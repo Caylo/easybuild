@@ -73,6 +73,7 @@ Other topics
     Useful-scripts
     Deprecated-functionality
     Removed-functionality
+    api/*
 
 Getting help
 ============
