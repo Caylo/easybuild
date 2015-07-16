@@ -9,6 +9,7 @@ Submodules
    test.framework.asyncprocess
    test.framework.build_log
    test.framework.config
+   test.framework.docs
    test.framework.easyblock
    test.framework.easyconfig
    test.framework.easyconfigformat

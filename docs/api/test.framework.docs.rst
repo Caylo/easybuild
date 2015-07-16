@@ -1,4 +1,4 @@
-.. automodule:: easybuild.tools.include
+.. automodule:: test.framework.docs
     :members:
     :undoc-members:
     :show-inheritance:
