@@ -1,4 +1,4 @@
-.. _avail_easyconfig_params:
+.. _vsd_avail_easyconfig_params:
 
 .. _easyconfig_params:
 
