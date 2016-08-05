@@ -1,4 +1,4 @@
-.. _avail_easyconfig_templates
+.. _avail_easyconfig_templates:
 *(see also* ``eb --avail-easyconfig-templates`` *)*
 
 Template names/values derived from easyconfig instance
@@ -85,7 +85,7 @@ Constant                   Template value                                Templat
 ``XORG_PROTO_SOURCE``      xorg proto source url                         ``http://xorg.freedesktop.org/archive/individual/proto/``                               
 ``XORG_UTIL_SOURCE``       xorg util source url                          ``http://xorg.freedesktop.org/archive/individual/util/``                                
 ``XORG_XCB_SOURCE``        xorg xcb source url                           ``http://xorg.freedesktop.org/archive/individual/xcb/``                                 
-``SHLIB_EXT``              extension for shared libraries                ``dylib``                                                                               
+``SHLIB_EXT``              extension for shared libraries                ``so``                                                                                  
 ``SOURCE_TAR_GZ``          Source .tar.gz bundle                         ``%(name)s-%(version)s.tar.gz``                                                         
 ``SOURCELOWER_TAR_GZ``     Source .tar.gz bundle with lowercase name     ``%(namelower)s-%(version)s.tar.gz``                                                    
 ``SOURCE_TAR_XZ``          Source .tar.xz bundle                         ``%(name)s-%(version)s.tar.xz``                                                         

@@ -5,336 +5,7 @@ Available toolchain options (by toolchain)
 
 *(see also* ``eb --avail-toolchain-opts <tcname>`` *)*
 
-ClangGCC_ - CrayCCE_ - CrayGNU_ - CrayIntel_ - CrayPGI_ - GCC_ - GCCcore_ - GNU_ - PGI_ - cgmpich_ - cgmpolf_ - cgmvapich2_ - cgmvolf_ - cgompi_ - cgoolf_ - dummy_ - foss_ - gcccuda_ - gimkl_ - gimpi_ - gmacml_ - gmpich2_ - gmpich_ - gmpolf_ - gmvapich2_ - gmvolf_ - goalf_ - gompi_ - gompic_ - goolf_ - goolfc_ - gpsmpi_ - gpsolf_ - gqacml_ - iccifort_ - ictce_ - iimpi_ - iiqmpi_ - impich_ - impmkl_ - intel-para_ - intel_ - iomkl_ - iompi_ - ipsmpi_ - iqacml_ - ismkl_ - pomkl_ - pompi_ - xlcxlf_ - xlmpich2_ - xlmpich_ - xlmvapich2_ - xlompi_
-
-.. _ClangGCC:
-
-Available options for ClangGCC toolchain
-----------------------------------------
-
-=========================    ===============================================    =========
-option                       description                                        default  
-=========================    ===============================================    =========
-``32bit``                    Compile 32bit target                               ``False``
-``basic-block-vectorize``    Basic block vectorization                          ``False``
-``cciscxx``                  Use CC as CXX                                      ``False``
-``cstd``                     Specify C standard                                 ``None`` 
-``debug``                    Enable debug                                       ``False``
-``defaultopt``               Default compiler optimizations                     ``False``
-``defaultprec``              Default precision                                  ``False``
-``i8``                       Integers are 8 byte integers                       ``False``
-``loop-vectorize``           Loop vectorization                                 ``False``
-``loose``                    Loose precision                                    ``False``
-``lowopt``                   Low compiler optimizations                         ``False``
-``noopt``                    Disable compiler optimizations                     ``False``
-``openmp``                   Enable OpenMP                                      ``False``
-``opt``                      High compiler optimizations                        ``False``
-``optarch``                  Enable architecture optimizations                  ``True`` 
-``packed-linker-options``    Pack the linker options as comma separated list    ``False``
-``pic``                      Use PIC                                            ``False``
-``precise``                  High precision                                     ``False``
-``r8``                       Real is 8 byte real                                ``False``
-``shared``                   Build shared library                               ``False``
-``static``                   Build static library                               ``False``
-``strict``                   Strict (highest) precision                         ``False``
-``unroll``                   Unroll loops                                       ``False``
-``verbose``                  Verbose output                                     ``False``
-``veryloose``                Very loose precision                               ``False``
-=========================    ===============================================    =========
-
-
-.. _CrayCCE:
-
-Available options for CrayCCE toolchain
----------------------------------------
-
-=========================    ===============================================================================================================================================================================================================================================================    =========
-option                       description                                                                                                                                                                                                                                                        default  
-=========================    ===============================================================================================================================================================================================================================================================    =========
-``32bit``                    Compile 32bit target                                                                                                                                                                                                                                               ``False``
-``cciscxx``                  Use CC as CXX                                                                                                                                                                                                                                                      ``False``
-``cstd``                     Specify C standard                                                                                                                                                                                                                                                 ``None`` 
-``debug``                    Enable debug                                                                                                                                                                                                                                                       ``False``
-``defaultopt``               Default compiler optimizations                                                                                                                                                                                                                                     ``False``
-``defaultprec``              Default precision                                                                                                                                                                                                                                                  ``False``
-``dynamic``                  Generate dynamically linked executable                                                                                                                                                                                                                             ``True`` 
-``i8``                       Integers are 8 byte integers                                                                                                                                                                                                                                       ``False``
-``loose``                    Loose precision                                                                                                                                                                                                                                                    ``False``
-``lowopt``                   Low compiler optimizations                                                                                                                                                                                                                                         ``False``
-``mpich-mt``                 Directs the driver to link in an alternate version of the Cray-MPICH library which                              provides fine-grained multi-threading support to applications that perform                              MPI operations within threaded regions.    ``False``
-``noopt``                    Disable compiler optimizations                                                                                                                                                                                                                                     ``False``
-``openmp``                   Enable OpenMP                                                                                                                                                                                                                                                      ``False``
-``opt``                      High compiler optimizations                                                                                                                                                                                                                                        ``False``
-``optarch``                  Enable architecture optimizations                                                                                                                                                                                                                                  ``False``
-``packed-linker-options``    Pack the linker options as comma separated list                                                                                                                                                                                                                    ``False``
-``pic``                      Use PIC                                                                                                                                                                                                                                                            ``False``
-``precise``                  High precision                                                                                                                                                                                                                                                     ``False``
-``r8``                       Real is 8 byte real                                                                                                                                                                                                                                                ``False``
-``shared``                   Build shared library                                                                                                                                                                                                                                               ``False``
-``static``                   Build static library                                                                                                                                                                                                                                               ``False``
-``strict``                   Strict (highest) precision                                                                                                                                                                                                                                         ``False``
-``unroll``                   Unroll loops                                                                                                                                                                                                                                                       ``False``
-``usempi``                   Use MPI compiler as default compiler                                                                                                                                                                                                                               ``False``
-``verbose``                  Verbose output                                                                                                                                                                                                                                                     ``True`` 
-``veryloose``                Very loose precision                                                                                                                                                                                                                                               ``False``
-=========================    ===============================================================================================================================================================================================================================================================    =========
-
-
-.. _CrayGNU:
-
-Available options for CrayGNU toolchain
----------------------------------------
-
-=========================    ===============================================================================================================================================================================================================================================================    =========
-option                       description                                                                                                                                                                                                                                                        default  
-=========================    ===============================================================================================================================================================================================================================================================    =========
-``32bit``                    Compile 32bit target                                                                                                                                                                                                                                               ``False``
-``cciscxx``                  Use CC as CXX                                                                                                                                                                                                                                                      ``False``
-``cstd``                     Specify C standard                                                                                                                                                                                                                                                 ``None`` 
-``debug``                    Enable debug                                                                                                                                                                                                                                                       ``False``
-``defaultopt``               Default compiler optimizations                                                                                                                                                                                                                                     ``False``
-``defaultprec``              Default precision                                                                                                                                                                                                                                                  ``False``
-``dynamic``                  Generate dynamically linked executable                                                                                                                                                                                                                             ``True`` 
-``i8``                       Integers are 8 byte integers                                                                                                                                                                                                                                       ``False``
-``loose``                    Loose precision                                                                                                                                                                                                                                                    ``False``
-``lowopt``                   Low compiler optimizations                                                                                                                                                                                                                                         ``False``
-``mpich-mt``                 Directs the driver to link in an alternate version of the Cray-MPICH library which                              provides fine-grained multi-threading support to applications that perform                              MPI operations within threaded regions.    ``False``
-``noopt``                    Disable compiler optimizations                                                                                                                                                                                                                                     ``False``
-``openmp``                   Enable OpenMP                                                                                                                                                                                                                                                      ``False``
-``opt``                      High compiler optimizations                                                                                                                                                                                                                                        ``False``
-``optarch``                  Enable architecture optimizations                                                                                                                                                                                                                                  ``False``
-``packed-linker-options``    Pack the linker options as comma separated list                                                                                                                                                                                                                    ``False``
-``pic``                      Use PIC                                                                                                                                                                                                                                                            ``False``
-``precise``                  High precision                                                                                                                                                                                                                                                     ``False``
-``r8``                       Real is 8 byte real                                                                                                                                                                                                                                                ``False``
-``shared``                   Build shared library                                                                                                                                                                                                                                               ``False``
-``static``                   Build static library                                                                                                                                                                                                                                               ``False``
-``strict``                   Strict (highest) precision                                                                                                                                                                                                                                         ``False``
-``unroll``                   Unroll loops                                                                                                                                                                                                                                                       ``False``
-``usempi``                   Use MPI compiler as default compiler                                                                                                                                                                                                                               ``False``
-``verbose``                  Verbose output                                                                                                                                                                                                                                                     ``True`` 
-``veryloose``                Very loose precision                                                                                                                                                                                                                                               ``False``
-=========================    ===============================================================================================================================================================================================================================================================    =========
-
-
-.. _CrayIntel:
-
-Available options for CrayIntel toolchain
------------------------------------------
-
-=========================    ===============================================================================================================================================================================================================================================================    =========
-option                       description                                                                                                                                                                                                                                                        default  
-=========================    ===============================================================================================================================================================================================================================================================    =========
-``32bit``                    Compile 32bit target                                                                                                                                                                                                                                               ``False``
-``cciscxx``                  Use CC as CXX                                                                                                                                                                                                                                                      ``False``
-``cstd``                     Specify C standard                                                                                                                                                                                                                                                 ``None`` 
-``debug``                    Enable debug                                                                                                                                                                                                                                                       ``False``
-``defaultopt``               Default compiler optimizations                                                                                                                                                                                                                                     ``False``
-``defaultprec``              Default precision                                                                                                                                                                                                                                                  ``False``
-``dynamic``                  Generate dynamically linked executable                                                                                                                                                                                                                             ``True`` 
-``i8``                       Integers are 8 byte integers                                                                                                                                                                                                                                       ``False``
-``loose``                    Loose precision                                                                                                                                                                                                                                                    ``False``
-``lowopt``                   Low compiler optimizations                                                                                                                                                                                                                                         ``False``
-``mpich-mt``                 Directs the driver to link in an alternate version of the Cray-MPICH library which                              provides fine-grained multi-threading support to applications that perform                              MPI operations within threaded regions.    ``False``
-``noopt``                    Disable compiler optimizations                                                                                                                                                                                                                                     ``False``
-``openmp``                   Enable OpenMP                                                                                                                                                                                                                                                      ``False``
-``opt``                      High compiler optimizations                                                                                                                                                                                                                                        ``False``
-``optarch``                  Enable architecture optimizations                                                                                                                                                                                                                                  ``False``
-``packed-linker-options``    Pack the linker options as comma separated list                                                                                                                                                                                                                    ``False``
-``pic``                      Use PIC                                                                                                                                                                                                                                                            ``False``
-``precise``                  High precision                                                                                                                                                                                                                                                     ``False``
-``r8``                       Real is 8 byte real                                                                                                                                                                                                                                                ``False``
-``shared``                   Build shared library                                                                                                                                                                                                                                               ``False``
-``static``                   Build static library                                                                                                                                                                                                                                               ``False``
-``strict``                   Strict (highest) precision                                                                                                                                                                                                                                         ``False``
-``unroll``                   Unroll loops                                                                                                                                                                                                                                                       ``False``
-``usempi``                   Use MPI compiler as default compiler                                                                                                                                                                                                                               ``False``
-``verbose``                  Verbose output                                                                                                                                                                                                                                                     ``True`` 
-``veryloose``                Very loose precision                                                                                                                                                                                                                                               ``False``
-=========================    ===============================================================================================================================================================================================================================================================    =========
-
-
-.. _CrayPGI:
-
-Available options for CrayPGI toolchain
----------------------------------------
-
-=========================    ===============================================================================================================================================================================================================================================================    =========
-option                       description                                                                                                                                                                                                                                                        default  
-=========================    ===============================================================================================================================================================================================================================================================    =========
-``32bit``                    Compile 32bit target                                                                                                                                                                                                                                               ``False``
-``cciscxx``                  Use CC as CXX                                                                                                                                                                                                                                                      ``False``
-``cstd``                     Specify C standard                                                                                                                                                                                                                                                 ``None`` 
-``debug``                    Enable debug                                                                                                                                                                                                                                                       ``False``
-``defaultopt``               Default compiler optimizations                                                                                                                                                                                                                                     ``False``
-``defaultprec``              Default precision                                                                                                                                                                                                                                                  ``False``
-``dynamic``                  Generate dynamically linked executable                                                                                                                                                                                                                             ``True`` 
-``i8``                       Integers are 8 byte integers                                                                                                                                                                                                                                       ``False``
-``loose``                    Loose precision                                                                                                                                                                                                                                                    ``False``
-``lowopt``                   Low compiler optimizations                                                                                                                                                                                                                                         ``False``
-``mpich-mt``                 Directs the driver to link in an alternate version of the Cray-MPICH library which                              provides fine-grained multi-threading support to applications that perform                              MPI operations within threaded regions.    ``False``
-``noopt``                    Disable compiler optimizations                                                                                                                                                                                                                                     ``False``
-``openmp``                   Enable OpenMP                                                                                                                                                                                                                                                      ``False``
-``opt``                      High compiler optimizations                                                                                                                                                                                                                                        ``False``
-``optarch``                  Enable architecture optimizations                                                                                                                                                                                                                                  ``False``
-``packed-linker-options``    Pack the linker options as comma separated list                                                                                                                                                                                                                    ``False``
-``pic``                      Use PIC                                                                                                                                                                                                                                                            ``False``
-``precise``                  High precision                                                                                                                                                                                                                                                     ``False``
-``r8``                       Real is 8 byte real                                                                                                                                                                                                                                                ``False``
-``shared``                   Build shared library                                                                                                                                                                                                                                               ``False``
-``static``                   Build static library                                                                                                                                                                                                                                               ``False``
-``strict``                   Strict (highest) precision                                                                                                                                                                                                                                         ``False``
-``unroll``                   Unroll loops                                                                                                                                                                                                                                                       ``False``
-``usempi``                   Use MPI compiler as default compiler                                                                                                                                                                                                                               ``False``
-``verbose``                  Verbose output                                                                                                                                                                                                                                                     ``True`` 
-``veryloose``                Very loose precision                                                                                                                                                                                                                                               ``False``
-=========================    ===============================================================================================================================================================================================================================================================    =========
-
-
-.. _GCC:
-
-Available options for GCC toolchain
------------------------------------
-
-=========================    ===============================================    =========
-option                       description                                        default  
-=========================    ===============================================    =========
-``32bit``                    Compile 32bit target                               ``False``
-``cciscxx``                  Use CC as CXX                                      ``False``
-``cstd``                     Specify C standard                                 ``None`` 
-``debug``                    Enable debug                                       ``False``
-``defaultopt``               Default compiler optimizations                     ``False``
-``defaultprec``              Default precision                                  ``False``
-``f2c``                      Generate code compatible with f2c and f77          ``False``
-``i8``                       Integers are 8 byte integers                       ``False``
-``loop``                     Automatic loop parallellisation                    ``False``
-``loose``                    Loose precision                                    ``False``
-``lowopt``                   Low compiler optimizations                         ``False``
-``lto``                      Enable Link Time Optimization                      ``False``
-``noopt``                    Disable compiler optimizations                     ``False``
-``openmp``                   Enable OpenMP                                      ``False``
-``opt``                      High compiler optimizations                        ``False``
-``optarch``                  Enable architecture optimizations                  ``True`` 
-``packed-linker-options``    Pack the linker options as comma separated list    ``False``
-``pic``                      Use PIC                                            ``False``
-``precise``                  High precision                                     ``False``
-``r8``                       Real is 8 byte real                                ``False``
-``shared``                   Build shared library                               ``False``
-``static``                   Build static library                               ``False``
-``strict``                   Strict (highest) precision                         ``False``
-``unroll``                   Unroll loops                                       ``False``
-``verbose``                  Verbose output                                     ``False``
-``veryloose``                Very loose precision                               ``False``
-=========================    ===============================================    =========
-
-
-.. _GCCcore:
-
-Available options for GCCcore toolchain
----------------------------------------
-
-=========================    ===============================================    =========
-option                       description                                        default  
-=========================    ===============================================    =========
-``32bit``                    Compile 32bit target                               ``False``
-``cciscxx``                  Use CC as CXX                                      ``False``
-``cstd``                     Specify C standard                                 ``None`` 
-``debug``                    Enable debug                                       ``False``
-``defaultopt``               Default compiler optimizations                     ``False``
-``defaultprec``              Default precision                                  ``False``
-``f2c``                      Generate code compatible with f2c and f77          ``False``
-``i8``                       Integers are 8 byte integers                       ``False``
-``loop``                     Automatic loop parallellisation                    ``False``
-``loose``                    Loose precision                                    ``False``
-``lowopt``                   Low compiler optimizations                         ``False``
-``lto``                      Enable Link Time Optimization                      ``False``
-``noopt``                    Disable compiler optimizations                     ``False``
-``openmp``                   Enable OpenMP                                      ``False``
-``opt``                      High compiler optimizations                        ``False``
-``optarch``                  Enable architecture optimizations                  ``True`` 
-``packed-linker-options``    Pack the linker options as comma separated list    ``False``
-``pic``                      Use PIC                                            ``False``
-``precise``                  High precision                                     ``False``
-``r8``                       Real is 8 byte real                                ``False``
-``shared``                   Build shared library                               ``False``
-``static``                   Build static library                               ``False``
-``strict``                   Strict (highest) precision                         ``False``
-``unroll``                   Unroll loops                                       ``False``
-``verbose``                  Verbose output                                     ``False``
-``veryloose``                Very loose precision                               ``False``
-=========================    ===============================================    =========
-
-
-.. _GNU:
-
-Available options for GNU toolchain
------------------------------------
-
-=========================    ===============================================    =========
-option                       description                                        default  
-=========================    ===============================================    =========
-``32bit``                    Compile 32bit target                               ``False``
-``cciscxx``                  Use CC as CXX                                      ``False``
-``cstd``                     Specify C standard                                 ``None`` 
-``debug``                    Enable debug                                       ``False``
-``defaultopt``               Default compiler optimizations                     ``False``
-``defaultprec``              Default precision                                  ``False``
-``f2c``                      Generate code compatible with f2c and f77          ``False``
-``i8``                       Integers are 8 byte integers                       ``False``
-``loop``                     Automatic loop parallellisation                    ``False``
-``loose``                    Loose precision                                    ``False``
-``lowopt``                   Low compiler optimizations                         ``False``
-``lto``                      Enable Link Time Optimization                      ``False``
-``noopt``                    Disable compiler optimizations                     ``False``
-``openmp``                   Enable OpenMP                                      ``False``
-``opt``                      High compiler optimizations                        ``False``
-``optarch``                  Enable architecture optimizations                  ``True`` 
-``packed-linker-options``    Pack the linker options as comma separated list    ``False``
-``pic``                      Use PIC                                            ``False``
-``precise``                  High precision                                     ``False``
-``r8``                       Real is 8 byte real                                ``False``
-``shared``                   Build shared library                               ``False``
-``static``                   Build static library                               ``False``
-``strict``                   Strict (highest) precision                         ``False``
-``unroll``                   Unroll loops                                       ``False``
-``verbose``                  Verbose output                                     ``False``
-``veryloose``                Very loose precision                               ``False``
-=========================    ===============================================    =========
-
-
-.. _PGI:
-
-Available options for PGI toolchain
------------------------------------
-
-=========================    ===============================================    =========
-option                       description                                        default  
-=========================    ===============================================    =========
-``32bit``                    Compile 32bit target                               ``False``
-``cciscxx``                  Use CC as CXX                                      ``False``
-``cstd``                     Specify C standard                                 ``None`` 
-``debug``                    Enable debug                                       ``False``
-``defaultopt``               Default compiler optimizations                     ``False``
-``defaultprec``              Default precision                                  ``False``
-``i8``                       Integers are 8 byte integers                       ``False``
-``loose``                    Loose precision                                    ``False``
-``lowopt``                   Low compiler optimizations                         ``False``
-``noopt``                    Disable compiler optimizations                     ``False``
-``openmp``                   Enable OpenMP                                      ``False``
-``opt``                      High compiler optimizations                        ``False``
-``optarch``                  Enable architecture optimizations                  ``True`` 
-``packed-linker-options``    Pack the linker options as comma separated list    ``False``
-``pic``                      Use PIC                                            ``False``
-``precise``                  High precision                                     ``False``
-``r8``                       Real is 8 byte real                                ``False``
-``shared``                   Build shared library                               ``False``
-``static``                   Build static library                               ``False``
-``strict``                   Strict (highest) precision                         ``False``
-``unroll``                   Unroll loops                                       ``False``
-``verbose``                  Verbose output                                     ``False``
-``veryloose``                Very loose precision                               ``False``
-=========================    ===============================================    =========
-
+cgmpich_ - cgmpolf_ - cgmvapich2_ - cgmvolf_ - cgompi_ - cgoolf_ - ClangGCC_ - CrayCCE_ - CrayGNU_ - CrayIntel_ - CrayPGI_ - dummy_ - foss_ - GCCcore_ - gcccuda_ - GCC_ - gimkl_ - gimpi_ - gmacml_ - gmpich2_ - gmpich_ - gmpolf_ - gmvapich2_ - gmvolf_ - GNU_ - goalf_ - gompic_ - gompi_ - goolf_ - goolfc_ - gpsmpi_ - gpsolf_ - gqacml_ - iccifort_ - ictce_ - iimpi_ - iiqmpi_ - impich_ - impmkl_ - intel_ - intel-para_ - iomkl_ - iompi_ - ipsmpi_ - iqacml_ - ismkl_ - PGI_ - pomkl_ - pompi_ - xlcxlf_ - xlmpich2_ - xlmpich_ - xlmvapich2_ - xlompi_
 
 .. _cgmpich:
 
@@ -558,6 +229,190 @@ option                       description                                        
 =========================    ===============================================    =========
 
 
+.. _ClangGCC:
+
+Available options for ClangGCC toolchain
+----------------------------------------
+
+=========================    ===============================================    =========
+option                       description                                        default  
+=========================    ===============================================    =========
+``32bit``                    Compile 32bit target                               ``False``
+``basic-block-vectorize``    Basic block vectorization                          ``False``
+``cciscxx``                  Use CC as CXX                                      ``False``
+``cstd``                     Specify C standard                                 ``None`` 
+``debug``                    Enable debug                                       ``False``
+``defaultopt``               Default compiler optimizations                     ``False``
+``defaultprec``              Default precision                                  ``False``
+``i8``                       Integers are 8 byte integers                       ``False``
+``loop-vectorize``           Loop vectorization                                 ``False``
+``loose``                    Loose precision                                    ``False``
+``lowopt``                   Low compiler optimizations                         ``False``
+``noopt``                    Disable compiler optimizations                     ``False``
+``openmp``                   Enable OpenMP                                      ``False``
+``opt``                      High compiler optimizations                        ``False``
+``optarch``                  Enable architecture optimizations                  ``True`` 
+``packed-linker-options``    Pack the linker options as comma separated list    ``False``
+``pic``                      Use PIC                                            ``False``
+``precise``                  High precision                                     ``False``
+``r8``                       Real is 8 byte real                                ``False``
+``shared``                   Build shared library                               ``False``
+``static``                   Build static library                               ``False``
+``strict``                   Strict (highest) precision                         ``False``
+``unroll``                   Unroll loops                                       ``False``
+``verbose``                  Verbose output                                     ``False``
+``veryloose``                Very loose precision                               ``False``
+=========================    ===============================================    =========
+
+
+.. _CrayCCE:
+
+Available options for CrayCCE toolchain
+---------------------------------------
+
+=========================    ===============================================================================================================================================================================================================================================================    =========
+option                       description                                                                                                                                                                                                                                                        default  
+=========================    ===============================================================================================================================================================================================================================================================    =========
+``32bit``                    Compile 32bit target                                                                                                                                                                                                                                               ``False``
+``cciscxx``                  Use CC as CXX                                                                                                                                                                                                                                                      ``False``
+``cstd``                     Specify C standard                                                                                                                                                                                                                                                 ``None`` 
+``debug``                    Enable debug                                                                                                                                                                                                                                                       ``False``
+``defaultopt``               Default compiler optimizations                                                                                                                                                                                                                                     ``False``
+``defaultprec``              Default precision                                                                                                                                                                                                                                                  ``False``
+``dynamic``                  Generate dynamically linked executable                                                                                                                                                                                                                             ``True`` 
+``i8``                       Integers are 8 byte integers                                                                                                                                                                                                                                       ``False``
+``loose``                    Loose precision                                                                                                                                                                                                                                                    ``False``
+``lowopt``                   Low compiler optimizations                                                                                                                                                                                                                                         ``False``
+``mpich-mt``                 Directs the driver to link in an alternate version of the Cray-MPICH library which                              provides fine-grained multi-threading support to applications that perform                              MPI operations within threaded regions.    ``False``
+``noopt``                    Disable compiler optimizations                                                                                                                                                                                                                                     ``False``
+``openmp``                   Enable OpenMP                                                                                                                                                                                                                                                      ``False``
+``opt``                      High compiler optimizations                                                                                                                                                                                                                                        ``False``
+``optarch``                  Enable architecture optimizations                                                                                                                                                                                                                                  ``False``
+``packed-linker-options``    Pack the linker options as comma separated list                                                                                                                                                                                                                    ``False``
+``pic``                      Use PIC                                                                                                                                                                                                                                                            ``False``
+``precise``                  High precision                                                                                                                                                                                                                                                     ``False``
+``r8``                       Real is 8 byte real                                                                                                                                                                                                                                                ``False``
+``shared``                   Build shared library                                                                                                                                                                                                                                               ``False``
+``static``                   Build static library                                                                                                                                                                                                                                               ``False``
+``strict``                   Strict (highest) precision                                                                                                                                                                                                                                         ``False``
+``unroll``                   Unroll loops                                                                                                                                                                                                                                                       ``False``
+``usempi``                   Use MPI compiler as default compiler                                                                                                                                                                                                                               ``False``
+``verbose``                  Verbose output                                                                                                                                                                                                                                                     ``True`` 
+``veryloose``                Very loose precision                                                                                                                                                                                                                                               ``False``
+=========================    ===============================================================================================================================================================================================================================================================    =========
+
+
+.. _CrayGNU:
+
+Available options for CrayGNU toolchain
+---------------------------------------
+
+=========================    ===============================================================================================================================================================================================================================================================    =========
+option                       description                                                                                                                                                                                                                                                        default  
+=========================    ===============================================================================================================================================================================================================================================================    =========
+``32bit``                    Compile 32bit target                                                                                                                                                                                                                                               ``False``
+``cciscxx``                  Use CC as CXX                                                                                                                                                                                                                                                      ``False``
+``cstd``                     Specify C standard                                                                                                                                                                                                                                                 ``None`` 
+``debug``                    Enable debug                                                                                                                                                                                                                                                       ``False``
+``defaultopt``               Default compiler optimizations                                                                                                                                                                                                                                     ``False``
+``defaultprec``              Default precision                                                                                                                                                                                                                                                  ``False``
+``dynamic``                  Generate dynamically linked executable                                                                                                                                                                                                                             ``True`` 
+``i8``                       Integers are 8 byte integers                                                                                                                                                                                                                                       ``False``
+``loose``                    Loose precision                                                                                                                                                                                                                                                    ``False``
+``lowopt``                   Low compiler optimizations                                                                                                                                                                                                                                         ``False``
+``mpich-mt``                 Directs the driver to link in an alternate version of the Cray-MPICH library which                              provides fine-grained multi-threading support to applications that perform                              MPI operations within threaded regions.    ``False``
+``noopt``                    Disable compiler optimizations                                                                                                                                                                                                                                     ``False``
+``openmp``                   Enable OpenMP                                                                                                                                                                                                                                                      ``False``
+``opt``                      High compiler optimizations                                                                                                                                                                                                                                        ``False``
+``optarch``                  Enable architecture optimizations                                                                                                                                                                                                                                  ``False``
+``packed-linker-options``    Pack the linker options as comma separated list                                                                                                                                                                                                                    ``False``
+``pic``                      Use PIC                                                                                                                                                                                                                                                            ``False``
+``precise``                  High precision                                                                                                                                                                                                                                                     ``False``
+``r8``                       Real is 8 byte real                                                                                                                                                                                                                                                ``False``
+``shared``                   Build shared library                                                                                                                                                                                                                                               ``False``
+``static``                   Build static library                                                                                                                                                                                                                                               ``False``
+``strict``                   Strict (highest) precision                                                                                                                                                                                                                                         ``False``
+``unroll``                   Unroll loops                                                                                                                                                                                                                                                       ``False``
+``usempi``                   Use MPI compiler as default compiler                                                                                                                                                                                                                               ``False``
+``verbose``                  Verbose output                                                                                                                                                                                                                                                     ``True`` 
+``veryloose``                Very loose precision                                                                                                                                                                                                                                               ``False``
+=========================    ===============================================================================================================================================================================================================================================================    =========
+
+
+.. _CrayIntel:
+
+Available options for CrayIntel toolchain
+-----------------------------------------
+
+=========================    ===============================================================================================================================================================================================================================================================    =========
+option                       description                                                                                                                                                                                                                                                        default  
+=========================    ===============================================================================================================================================================================================================================================================    =========
+``32bit``                    Compile 32bit target                                                                                                                                                                                                                                               ``False``
+``cciscxx``                  Use CC as CXX                                                                                                                                                                                                                                                      ``False``
+``cstd``                     Specify C standard                                                                                                                                                                                                                                                 ``None`` 
+``debug``                    Enable debug                                                                                                                                                                                                                                                       ``False``
+``defaultopt``               Default compiler optimizations                                                                                                                                                                                                                                     ``False``
+``defaultprec``              Default precision                                                                                                                                                                                                                                                  ``False``
+``dynamic``                  Generate dynamically linked executable                                                                                                                                                                                                                             ``True`` 
+``i8``                       Integers are 8 byte integers                                                                                                                                                                                                                                       ``False``
+``loose``                    Loose precision                                                                                                                                                                                                                                                    ``False``
+``lowopt``                   Low compiler optimizations                                                                                                                                                                                                                                         ``False``
+``mpich-mt``                 Directs the driver to link in an alternate version of the Cray-MPICH library which                              provides fine-grained multi-threading support to applications that perform                              MPI operations within threaded regions.    ``False``
+``noopt``                    Disable compiler optimizations                                                                                                                                                                                                                                     ``False``
+``openmp``                   Enable OpenMP                                                                                                                                                                                                                                                      ``False``
+``opt``                      High compiler optimizations                                                                                                                                                                                                                                        ``False``
+``optarch``                  Enable architecture optimizations                                                                                                                                                                                                                                  ``False``
+``packed-linker-options``    Pack the linker options as comma separated list                                                                                                                                                                                                                    ``False``
+``pic``                      Use PIC                                                                                                                                                                                                                                                            ``False``
+``precise``                  High precision                                                                                                                                                                                                                                                     ``False``
+``r8``                       Real is 8 byte real                                                                                                                                                                                                                                                ``False``
+``shared``                   Build shared library                                                                                                                                                                                                                                               ``False``
+``static``                   Build static library                                                                                                                                                                                                                                               ``False``
+``strict``                   Strict (highest) precision                                                                                                                                                                                                                                         ``False``
+``unroll``                   Unroll loops                                                                                                                                                                                                                                                       ``False``
+``usempi``                   Use MPI compiler as default compiler                                                                                                                                                                                                                               ``False``
+``verbose``                  Verbose output                                                                                                                                                                                                                                                     ``True`` 
+``veryloose``                Very loose precision                                                                                                                                                                                                                                               ``False``
+=========================    ===============================================================================================================================================================================================================================================================    =========
+
+
+.. _CrayPGI:
+
+Available options for CrayPGI toolchain
+---------------------------------------
+
+=========================    ===============================================================================================================================================================================================================================================================    =========
+option                       description                                                                                                                                                                                                                                                        default  
+=========================    ===============================================================================================================================================================================================================================================================    =========
+``32bit``                    Compile 32bit target                                                                                                                                                                                                                                               ``False``
+``cciscxx``                  Use CC as CXX                                                                                                                                                                                                                                                      ``False``
+``cstd``                     Specify C standard                                                                                                                                                                                                                                                 ``None`` 
+``debug``                    Enable debug                                                                                                                                                                                                                                                       ``False``
+``defaultopt``               Default compiler optimizations                                                                                                                                                                                                                                     ``False``
+``defaultprec``              Default precision                                                                                                                                                                                                                                                  ``False``
+``dynamic``                  Generate dynamically linked executable                                                                                                                                                                                                                             ``True`` 
+``i8``                       Integers are 8 byte integers                                                                                                                                                                                                                                       ``False``
+``loose``                    Loose precision                                                                                                                                                                                                                                                    ``False``
+``lowopt``                   Low compiler optimizations                                                                                                                                                                                                                                         ``False``
+``mpich-mt``                 Directs the driver to link in an alternate version of the Cray-MPICH library which                              provides fine-grained multi-threading support to applications that perform                              MPI operations within threaded regions.    ``False``
+``noopt``                    Disable compiler optimizations                                                                                                                                                                                                                                     ``False``
+``openmp``                   Enable OpenMP                                                                                                                                                                                                                                                      ``False``
+``opt``                      High compiler optimizations                                                                                                                                                                                                                                        ``False``
+``optarch``                  Enable architecture optimizations                                                                                                                                                                                                                                  ``False``
+``packed-linker-options``    Pack the linker options as comma separated list                                                                                                                                                                                                                    ``False``
+``pic``                      Use PIC                                                                                                                                                                                                                                                            ``False``
+``precise``                  High precision                                                                                                                                                                                                                                                     ``False``
+``r8``                       Real is 8 byte real                                                                                                                                                                                                                                                ``False``
+``shared``                   Build shared library                                                                                                                                                                                                                                               ``False``
+``static``                   Build static library                                                                                                                                                                                                                                               ``False``
+``strict``                   Strict (highest) precision                                                                                                                                                                                                                                         ``False``
+``unroll``                   Unroll loops                                                                                                                                                                                                                                                       ``False``
+``usempi``                   Use MPI compiler as default compiler                                                                                                                                                                                                                               ``False``
+``verbose``                  Verbose output                                                                                                                                                                                                                                                     ``True`` 
+``veryloose``                Very loose precision                                                                                                                                                                                                                                               ``False``
+=========================    ===============================================================================================================================================================================================================================================================    =========
+
+
 .. _dummy:
 
 Available options for dummy toolchain
@@ -630,10 +485,84 @@ option                       description                                        
 =========================    ===============================================    =========
 
 
+.. _GCCcore:
+
+Available options for GCCcore toolchain
+---------------------------------------
+
+=========================    ===============================================    =========
+option                       description                                        default  
+=========================    ===============================================    =========
+``32bit``                    Compile 32bit target                               ``False``
+``cciscxx``                  Use CC as CXX                                      ``False``
+``cstd``                     Specify C standard                                 ``None`` 
+``debug``                    Enable debug                                       ``False``
+``defaultopt``               Default compiler optimizations                     ``False``
+``defaultprec``              Default precision                                  ``False``
+``f2c``                      Generate code compatible with f2c and f77          ``False``
+``i8``                       Integers are 8 byte integers                       ``False``
+``loop``                     Automatic loop parallellisation                    ``False``
+``loose``                    Loose precision                                    ``False``
+``lowopt``                   Low compiler optimizations                         ``False``
+``lto``                      Enable Link Time Optimization                      ``False``
+``noopt``                    Disable compiler optimizations                     ``False``
+``openmp``                   Enable OpenMP                                      ``False``
+``opt``                      High compiler optimizations                        ``False``
+``optarch``                  Enable architecture optimizations                  ``True`` 
+``packed-linker-options``    Pack the linker options as comma separated list    ``False``
+``pic``                      Use PIC                                            ``False``
+``precise``                  High precision                                     ``False``
+``r8``                       Real is 8 byte real                                ``False``
+``shared``                   Build shared library                               ``False``
+``static``                   Build static library                               ``False``
+``strict``                   Strict (highest) precision                         ``False``
+``unroll``                   Unroll loops                                       ``False``
+``verbose``                  Verbose output                                     ``False``
+``veryloose``                Very loose precision                               ``False``
+=========================    ===============================================    =========
+
+
 .. _gcccuda:
 
 Available options for gcccuda toolchain
 ---------------------------------------
+
+=========================    ===============================================    =========
+option                       description                                        default  
+=========================    ===============================================    =========
+``32bit``                    Compile 32bit target                               ``False``
+``cciscxx``                  Use CC as CXX                                      ``False``
+``cstd``                     Specify C standard                                 ``None`` 
+``debug``                    Enable debug                                       ``False``
+``defaultopt``               Default compiler optimizations                     ``False``
+``defaultprec``              Default precision                                  ``False``
+``f2c``                      Generate code compatible with f2c and f77          ``False``
+``i8``                       Integers are 8 byte integers                       ``False``
+``loop``                     Automatic loop parallellisation                    ``False``
+``loose``                    Loose precision                                    ``False``
+``lowopt``                   Low compiler optimizations                         ``False``
+``lto``                      Enable Link Time Optimization                      ``False``
+``noopt``                    Disable compiler optimizations                     ``False``
+``openmp``                   Enable OpenMP                                      ``False``
+``opt``                      High compiler optimizations                        ``False``
+``optarch``                  Enable architecture optimizations                  ``True`` 
+``packed-linker-options``    Pack the linker options as comma separated list    ``False``
+``pic``                      Use PIC                                            ``False``
+``precise``                  High precision                                     ``False``
+``r8``                       Real is 8 byte real                                ``False``
+``shared``                   Build shared library                               ``False``
+``static``                   Build static library                               ``False``
+``strict``                   Strict (highest) precision                         ``False``
+``unroll``                   Unroll loops                                       ``False``
+``verbose``                  Verbose output                                     ``False``
+``veryloose``                Very loose precision                               ``False``
+=========================    ===============================================    =========
+
+
+.. _GCC:
+
+Available options for GCC toolchain
+-----------------------------------
 
 =========================    ===============================================    =========
 option                       description                                        default  
@@ -971,10 +900,10 @@ option                       description                                        
 =========================    ===============================================    =========
 
 
-.. _goalf:
+.. _GNU:
 
-Available options for goalf toolchain
--------------------------------------
+Available options for GNU toolchain
+-----------------------------------
 
 =========================    ===============================================    =========
 option                       description                                        default  
@@ -1003,15 +932,14 @@ option                       description                                        
 ``static``                   Build static library                               ``False``
 ``strict``                   Strict (highest) precision                         ``False``
 ``unroll``                   Unroll loops                                       ``False``
-``usempi``                   Use MPI compiler as default compiler               ``False``
 ``verbose``                  Verbose output                                     ``False``
 ``veryloose``                Very loose precision                               ``False``
 =========================    ===============================================    =========
 
 
-.. _gompi:
+.. _goalf:
 
-Available options for gompi toolchain
+Available options for goalf toolchain
 -------------------------------------
 
 =========================    ===============================================    =========
@@ -1051,6 +979,44 @@ option                       description                                        
 
 Available options for gompic toolchain
 --------------------------------------
+
+=========================    ===============================================    =========
+option                       description                                        default  
+=========================    ===============================================    =========
+``32bit``                    Compile 32bit target                               ``False``
+``cciscxx``                  Use CC as CXX                                      ``False``
+``cstd``                     Specify C standard                                 ``None`` 
+``debug``                    Enable debug                                       ``False``
+``defaultopt``               Default compiler optimizations                     ``False``
+``defaultprec``              Default precision                                  ``False``
+``f2c``                      Generate code compatible with f2c and f77          ``False``
+``i8``                       Integers are 8 byte integers                       ``False``
+``loop``                     Automatic loop parallellisation                    ``False``
+``loose``                    Loose precision                                    ``False``
+``lowopt``                   Low compiler optimizations                         ``False``
+``lto``                      Enable Link Time Optimization                      ``False``
+``noopt``                    Disable compiler optimizations                     ``False``
+``openmp``                   Enable OpenMP                                      ``False``
+``opt``                      High compiler optimizations                        ``False``
+``optarch``                  Enable architecture optimizations                  ``True`` 
+``packed-linker-options``    Pack the linker options as comma separated list    ``False``
+``pic``                      Use PIC                                            ``False``
+``precise``                  High precision                                     ``False``
+``r8``                       Real is 8 byte real                                ``False``
+``shared``                   Build shared library                               ``False``
+``static``                   Build static library                               ``False``
+``strict``                   Strict (highest) precision                         ``False``
+``unroll``                   Unroll loops                                       ``False``
+``usempi``                   Use MPI compiler as default compiler               ``False``
+``verbose``                  Verbose output                                     ``False``
+``veryloose``                Very loose precision                               ``False``
+=========================    ===============================================    =========
+
+
+.. _gompi:
+
+Available options for gompi toolchain
+-------------------------------------
 
 =========================    ===============================================    =========
 option                       description                                        default  
@@ -1502,10 +1468,10 @@ option                       description                                        
 =========================    ===============================================    =========
 
 
-.. _intel-para:
+.. _intel:
 
-Available options for intel-para toolchain
-------------------------------------------
+Available options for intel toolchain
+-------------------------------------
 
 =========================    ===============================================    =========
 option                       description                                        default  
@@ -1540,10 +1506,10 @@ option                       description                                        
 =========================    ===============================================    =========
 
 
-.. _intel:
+.. _intel-para:
 
-Available options for intel toolchain
--------------------------------------
+Available options for intel-para toolchain
+------------------------------------------
 
 =========================    ===============================================    =========
 option                       description                                        default  
@@ -1763,6 +1729,40 @@ option                       description                                        
 ``strict``                   Strict (highest) precision                         ``False``
 ``unroll``                   Unroll loops                                       ``False``
 ``usempi``                   Use MPI compiler as default compiler               ``False``
+``verbose``                  Verbose output                                     ``False``
+``veryloose``                Very loose precision                               ``False``
+=========================    ===============================================    =========
+
+
+.. _PGI:
+
+Available options for PGI toolchain
+-----------------------------------
+
+=========================    ===============================================    =========
+option                       description                                        default  
+=========================    ===============================================    =========
+``32bit``                    Compile 32bit target                               ``False``
+``cciscxx``                  Use CC as CXX                                      ``False``
+``cstd``                     Specify C standard                                 ``None`` 
+``debug``                    Enable debug                                       ``False``
+``defaultopt``               Default compiler optimizations                     ``False``
+``defaultprec``              Default precision                                  ``False``
+``i8``                       Integers are 8 byte integers                       ``False``
+``loose``                    Loose precision                                    ``False``
+``lowopt``                   Low compiler optimizations                         ``False``
+``noopt``                    Disable compiler optimizations                     ``False``
+``openmp``                   Enable OpenMP                                      ``False``
+``opt``                      High compiler optimizations                        ``False``
+``optarch``                  Enable architecture optimizations                  ``True`` 
+``packed-linker-options``    Pack the linker options as comma separated list    ``False``
+``pic``                      Use PIC                                            ``False``
+``precise``                  High precision                                     ``False``
+``r8``                       Real is 8 byte real                                ``False``
+``shared``                   Build shared library                               ``False``
+``static``                   Build static library                               ``False``
+``strict``                   Strict (highest) precision                         ``False``
+``unroll``                   Unroll loops                                       ``False``
 ``verbose``                  Verbose output                                     ``False``
 ``veryloose``                Very loose precision                               ``False``
 =========================    ===============================================    =========
