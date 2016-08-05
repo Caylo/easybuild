@@ -1,22 +1,22 @@
 Overview of version specific (auto-generated) documentation pages
 =================================================================
-* :ref:`generic_easyblocks`
+* :ref:`Overview of generic easyblocks <generic_easyblocks>`
 
-* :ref:`eb_help`
+* :ref:`Overview of configuration options (eb --help) <eb_help>`
 
-* :ref:`vsd_avail_easyconfig_params`
+* :ref:`Available easyconfig parameters <vsd_avail_easyconfig_params>`
 
-* :ref:`avail_cfgfile_constants`
+* :ref:`Available config file constants <avail_cfgfile_constants>`
 
-* :ref:`avail_easyconfig_constants`
+* :ref:`Constants available for easyconfig files <avail_easyconfig_constants>`
 
-* :ref:`avail_easyconfig_licenses`
+* :ref:`License constants available for easyconfig files <avail_easyconfig_licenses>`
 
-* :ref:`avail_easyconfig_templates`
+* :ref:`Templates available for easyconfig files <avail_easyconfig_templates>`
 
-* :ref:`vsd_list_easyblocks`
+* :ref:`List of available easyblocks <vsd_list_easyblocks>`
 
-* :ref:`vsd_list_toolchains`
+* :ref:`List of known toolchains <vsd_list_toolchains>`
 
-* :ref:`avail_toolchain_opts`
+* :ref:`List of available toolchain options <avail_toolchain_opts>`
 
